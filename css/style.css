@@ -4,6 +4,10 @@
 *, *::before, *::after {
 	box-sizing: border-box;
 }
+::selection {
+  color: #f3f5f6; 
+  background: #EF5350;
+}
 .readable-hidden{
 	background-color: pink;
 	position: absolute;
@@ -81,6 +85,11 @@ linear-gradient(45deg, #92baac 45px, transparent 45px,transparent 91px, #e1ebbd 
 linear-gradient(-45deg, #92baac 23px, transparent 23px, transparent 68px,#92baac 68px,#92baac 113px,transparent 113px,transparent 158px,#92baac 158px);*/
 background-color:#e9edef;
 background-size: 128px 128px;
+}
+/* responsive 이미지 */
+img{
+	max-width: 100%;
+	height: auto;
 }
 .container{
 	box-sizing: border-box;
@@ -166,4 +175,81 @@ background-size: 128px 128px;
 }
 .copyright{
 	margin-left: auto;
+}
+/* portfolio 공통 */
+.portfolio{
+	text-align: center;
+	font-size: 3rem;
+}
+.light{
+	background-color: #fff;
+	padding: 1em 2em;
+}
+.dark{
+	background-color: #1a1e23;
+	color: #f3f5f6;
+	padding: 1em 2em;
+}
+.dark .comment{
+	color: #aaa;
+	font-size: 2rem;
+	font-style: italic;
+}
+.portfolio .title{
+	font-size: 5rem;
+	font-family: "Spoqa Han Sans";
+	font-weight: 700;
+	padding: 1em 0;
+	text-transform: uppercase;
+}
+.portfolio .small{
+	font-size: 1.5rem;
+	padding: 1em 0;
+}
+.portfolio .medium{
+	font-size: 4rem;
+}
+.portfolio .group{
+	padding: 0;
+	margin-top: 50px;
+}
+.portfolio .wrapper{
+	width: 750px;
+	margin: 0 auto;
+	text-align: left;
+}
+.portfolio p{
+	font-size: 3rem;
+	margin: 1.5em 0;
+	line-height: 2;
+}
+.portfolio .thumbnail{
+	width:100%;
+	font-size: 1.5rem;
+}
+.portfolio .list, .portfolio ol{
+}
+.portfolio ol{
+	list-style-type: decimal;
+	padding-left: 50px;
+}
+.portfolio li{
+	margin: 1em 0;
+}
+.next-portfolio{
+	padding: 4em 3em;
+	display: flex;
+	justify-content: space-between;
+}
+.next-title{
+	color:#aaa;
+	text-transform: uppercase;
+	font-family: "Spoqa Han Sans";
+	font-weight: 700;
+}
+.next-portfolio a{
+	color:#EF5350;
+}
+.next-portfolio a::after{
+	content: " →"
 }
